@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/editQr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/qr_hint"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:maxLines="3"
+                android:minLines="2"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnQr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/qr_generate" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSave"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/qr_save" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageQr"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="22dp"
+                android:background="@color/white"
+                android:contentDescription="@string/tool_qrcode"
+                android:padding="10dp" />
+
+            <TextView
+                style="@style/ToolLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="center"
+                android:text="@string/qr_tip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_primary">#FF9CBBFF</color>
+    <color name="brand_container">#FF1B3B7A</color>
+    <color name="brand_on_container">#FFD7E3FF</color>
+
+    <color name="surface">#FF121316</color>
+    <color name="surface_card">#FF1D1F24</color>
+    <color name="text_primary">#FFE9EBEF</color>
+    <color name="text_secondary">#FF9AA1AC</color>
+    <color name="divider">#1FFFFFFF</color>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">简易工具箱</string>
+    <string name="app_slogan">离线可用 · 无广告 · 不联网</string>
+
+    <!-- 首页工具条目 -->
+    <string name="tool_calculator">计算器</string>
+    <string name="tool_calculator_desc">四则运算与括号</string>
+    <string name="tool_converter">单位换算</string>
+    <string name="tool_converter_desc">长度 / 重量 / 温度等</string>
+    <string name="tool_password">密码生成</string>
+    <string name="tool_password_desc">随机强密码</string>
+    <string name="tool_stopwatch">秒表计时</string>
+    <string name="tool_stopwatch_desc">计次与重置</string>
+    <string name="tool_level">水平仪</string>
+    <string name="tool_level_desc">检测手机倾斜角度</string>
+    <string name="tool_flashlight">手电筒</string>
+    <string name="tool_flashlight_desc">一键开关闪光灯</string>
+    <string name="tool_qrcode">二维码</string>
+    <string name="tool_qrcode_desc">文本生成二维码</string>
+    <string name="tool_device">设备信息</string>
+    <string name="tool_device_desc">查看软硬件参数</string>
+    <string name="tool_about">关于</string>
+    <string name="tool_about_desc">版本与说明</string>
+
+    <!-- 通用 -->
+    <string name="action_back">返回</string>
+    <string name="copied">已复制到剪贴板</string>
+    <string name="error_expr">表达式有误</string>
+    <string name="error_input">请输入有效数值</string>
+    <string name="tap_to_copy">点按结果可复制</string>
+
+    <!-- 计算器 -->
+    <string name="calc_hint">支持 + − × ÷ % 和括号</string>
+
+    <!-- 单位换算 -->
+    <string name="converter_category">类别</string>
+    <string name="converter_from">从</string>
+    <string name="converter_to">到</string>
+    <string name="converter_input_hint">输入数值</string>
+    <string name="converter_swap">交换</string>
+
+    <!-- 密码生成 -->
+    <string name="pw_length">密码长度</string>
+    <string name="pw_length_value">长度：%1$d 位</string>
+    <string name="pw_lower">小写字母</string>
+    <string name="pw_upper">大写字母</string>
+    <string name="pw_digit">数字</string>
+    <string name="pw_symbol">特殊符号</string>
+    <string name="pw_generate">重新生成</string>
+    <string name="pw_copy">复制密码</string>
+
+    <!-- 秒表 -->
+    <string name="sw_start">开始</string>
+    <string name="sw_pause">暂停</string>
+    <string name="sw_continue">继续</string>
+    <string name="sw_lap">计次</string>
+    <string name="sw_reset">重置</string>
+
+    <!-- 水平仪 -->
+    <string name="level_calibrate">校准归零</string>
+    <string name="level_leveled">已水平 ✓</string>
+    <string name="level_tilted">未水平</string>
+    <string name="level_unsupported">此设备没有加速度传感器</string>
+    <string name="level_tip">把手机平放在被测表面上，点击「校准归零」可消除误差</string>
+
+    <!-- 手电筒 -->
+    <string name="torch_turn_on">打开手电筒</string>
+    <string name="torch_turn_off">关闭手电筒</string>
+    <string name="torch_status_on">手电筒已开启</string>
+    <string name="torch_status_off">手电筒已关闭</string>
+    <string name="torch_unsupported">你的设备不支持闪光灯</string>
+    <string name="torch_failed">打开失败：%1$s</string>
+
+    <!-- 二维码 -->
+    <string name="qr_hint">输入文本或网址</string>
+    <string name="qr_generate">生成二维码</string>
+    <string name="qr_save">保存到相册</string>
+    <string name="qr_tip">二维码在本地绘制，不会上传任何内容</string>
+    <string name="qr_empty">请先输入内容</string>
+    <string name="qr_failed">生成失败，内容可能过长</string>
+    <string name="qr_saved">已保存到相册 Pictures/SimpleToolbox</string>
+    <string name="qr_save_failed">保存失败</string>
+    <string name="qr_save_unsupported">系统版本过低，请截图保存</string>
+
+    <!-- 设备信息 -->
+    <string name="device_copy">复制全部信息</string>
+    <string name="device_copied">设备信息已复制</string>
+
+    <!-- 关于 -->
+    <string name="about_version_value">版本 %1$s</string>
+    <string name="about_intro">简易工具箱是一个纯本地的小工具合集：没有广告、没有后台服务、不申请网络权限，所有计算和生成都在手机上完成。</string>
+    <string name="about_tools">包含工具</string>
+    <string name="about_open_source">本项目的源码以 MIT 协议开源，欢迎自行编译与修改。</string>
+</resources>
