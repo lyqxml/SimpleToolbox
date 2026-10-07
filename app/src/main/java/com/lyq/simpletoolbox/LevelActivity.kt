@@ -16,7 +16,7 @@ class LevelActivity : BaseToolActivity(), SensorEventListener {
     override val contentLayoutRes: Int = R.layout.activity_level
 
     private lateinit var sensorManager: SensorManager
-    private lateinit var accelerometer: Sensor?
+    private var accelerometer: Sensor? = null
     private lateinit var bubbleView: BubbleView
     private lateinit var anglesView: TextView
     private lateinit var stateView: TextView
@@ -69,10 +69,10 @@ class LevelActivity : BaseToolActivity(), SensorEventListener {
 
         lastRoll = roll
         lastPitch = pitch
-        apply(roll + offsetRoll, pitch + offsetPitch)
+        updateBubble(roll + offsetRoll, pitch + offsetPitch)
     }
 
-    private fun apply(roll: Float, pitch: Float) {
+    private fun updateBubble(roll: Float, pitch: Float) {
         bubbleView.roll = roll
         bubbleView.pitch = pitch
         anglesView.text = String.format(Locale.US, "左右 %+.1f°    前后 %+.1f°", roll, pitch)

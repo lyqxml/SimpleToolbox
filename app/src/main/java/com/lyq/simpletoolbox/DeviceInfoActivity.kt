@@ -39,7 +39,7 @@ class DeviceInfoActivity : BaseToolActivity() {
 
     private fun buildInfo(): String {
         val builder = StringBuilder()
-        val locale = ConfigurationCompat.getLocales(resources.configuration)[0] ?: Locale.getDefault()
+        val locale = ConfigurationCompat.getLocales(resources.configuration).get(0) ?: Locale.getDefault()
 
         builder.line("设备", Build.MANUFACTURER)
         builder.line("品牌 / 型号", "${Build.BRAND} / ${Build.MODEL}")
